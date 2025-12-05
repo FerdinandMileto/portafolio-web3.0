@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernando Gutierrez Berumen| INGENIERO EN SISTEMAS COMPUTACIONALES & DATA SCIENTIST
+Soluciones Blockchain para JuiceTIC</title>
+    <style>
+        /* ESTILO CORPORATE FUTURISM */
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent: #38bdf8; /* Azul Cian Tecnológico */
+            --text-main: #e2e8f0;
+            --text-secondary: #94a3b8;
+            --success: #10b981;
+        }
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #172554 100%);
+            color: var(--text-main);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 20px; /* Ajustado para móvil */
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: rgba(30, 41, 59, 0.85); /* Un poco más oscuro para leer bien */
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            border-radius: 16px;
+            padding: 30px 20px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+        }
+        
+        /* HEADER CON FOTO */
+        header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 20px;
+            flex-wrap: wrap; /* Para que se adapte en celus */
+        }
+        
+        .profile-container {
+            flex-shrink: 0;
+            margin-right: 25px;
+        }
+        
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent);
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+        }
+
+        .header-text {
+            flex-grow: 1;
+        }
+
+        h1 { margin: 0; font-size: 1.8rem; font-weight: 700; letter-spacing: -1px; color: #fff; }
+        .subtitle { color: var(--accent); font-weight: 600; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; margin-bottom: 5px;}
+        .role-tag { font-size: 0.9rem; color: var(--text-secondary); margin-top: 5px; }
+
+        .client-badge {
+            background: rgba(56, 189, 248, 0.1);
+            padding: 5px 10px;
+            border-radius: 4px;
+            border: 1px solid var(--accent);
+            font-size: 0.75rem;
+            color: #fff;
+            margin-top: 10px;
+            display: inline-block;
+        }
+        
+        /* VALUE PROPOSITION */
+        .hero-text { font-size: 1rem; line-height: 1.6; color: var(--text-secondary); margin-bottom: 30px; }
+        .highlight { color: var(--accent); font-weight: bold; }
+
+        /* MODULES GRID */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-bottom: 40px; }
+        .card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            padding: 20px;
+            border-left: 4px solid var(--accent);
+        }
+        .card h3 { margin-top: 0; color: #fff; font-size: 1.1rem; }
+        .card p { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0; }
+
+        /* ICERTIA DEMO SECTION */
+        .demo-section {
+            background: rgba(15, 23, 42, 0.6);
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px dashed var(--text-secondary);
+            text-align: center;
+        }
+        .input-group { margin: 20px 0; display: flex; flex-direction: column; gap: 10px; align-items: center;}
+        
+        input {
+            background: #0f172a; border: 1px solid #334155; color: #fff; padding: 12px; border-radius: 6px; width: 100%; max-width: 300px;
+            font-family: monospace; text-align: center;
+        }
+        button {
+            background: var(--accent); color: #0f172a; border: none; padding: 12px 25px; border-radius: 6px; 
+            font-weight: bold; cursor: pointer; transition: 0.3s; width: 100%; max-width: 300px;
+        }
+        .result-box { display: none; margin-top: 15px; color: var(--success); font-weight: bold; background: rgba(16, 185, 129, 0.1); padding: 10px; border-radius: 6px;}
+
+        /* CALL TO ACTION */
+        .cta-container { margin-top: 40px; text-align: center; }
+        .btn-primary {
+            display: inline-block;
+            background: linear-gradient(90deg, var(--accent), #3b82f6);
+            color: #fff; padding: 15px 30px; border-radius: 30px; text-decoration: none; font-weight: bold;
+            box-shadow: 0 4px 15px rgba(56, 189, 248, 0.4); 
+        }
+
+        /* MEDIA QUERY PARA MOVIL */
+        @media (max-width: 600px) {
+            header { flex-direction: column; text-align: center; }
+            .profile-container { margin-right: 0; margin-bottom: 15px; }
+            .header-text { width: 100%; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- HEADER CON FOTO -->
+        <header>
+            <div class="profile-container">
+                <!-- ASEGÚRATE DE QUE TU FOTO SE LLAME 'perfil.jpg' -->
+                <img src="perfil.jpg" alt="Fernando Gutiérrez" class="profile-img">
+            </div>
+            
+            <div class="header-text">
+                <div class="subtitle">Propuesta de Valor Comercial</div>
+                <h1>Fernando Gutiérrez Berumen</h1>
+                <div class="role-tag">Ingeniero en Sistemas & Data Scientist | Web3 Sales Specialist</div>
+                
+                <div class="client-badge">
+                    Especialista para: <strong>JUICETIC / ICERTIA</strong>
+                </div>
+            </div>
+        </header>
+
+        <!-- INTRO -->
+        <div class="hero-text">
+            <p>
+                He analizado el ecosistema de <strong>JuiceTIC</strong>. Entiendo que su misión es combinar la solidez de los servicios TI tradicionales (Banca, SAP) con la innovación disruptiva.
+            </p>
+            <p>
+                Mi perfil es el puente entre ambos mundos:
+                <span class="highlight">La seguridad corporativa</span> + 
+                <span class="highlight">La agilidad Web3 de Icertia</span>.
+            </p>
+        </div>
+
+        <!-- STRATEGIC MODULES -->
+        <div class="grid">
+            <div class="card">
+                <h3>🧩 Integración ERP</h3>
+            </div>
+            <div class="card">
+                <h3>🎓 Venta Consultiva</h3>
+                <p>Explico a rectores el valor financiero de la "Inmutabilidad" frente al papel, sin tecnicismos complejos.</p>
+            </div>
+            <div class="card">
+                <h3>⚖️ Ética y Datos</h3>
+                <p>For/index.htmlmación en Filosofía aplicada a la identidad digital soberana y protección de datos personales.</p>
+            </div>
+        </div>
+
+        <!-- LIVE DEMO SIMULATION -->
+        <div class="demo-section">
+            <h3 style="color: #fff; margin-bottom: 10px;">⚡ Demo: Validación Icertia</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 20px; color: var(--text-secondary);">
+                Simulación de validación de título en tiempo real.
+            </p>
+            
+            <div class="input-group">
+                <input type="text" value="HASH-8829-JUICETIC-FER" readonly>
+                <button onclick="verifyCert()">VERIFICAR EN BLOCKCHAIN</button>
+            </div>
+            
+            <div id="result" class="result-box">
+                ✅ CERTIFICADO VÁLIDO <br>
+                <span style="font-size:0.8rem; font-weight:normal;">
+                    Emisor: Universidad Tecnológica | Block: #1920482
+                </span>
+            </div>
+        </div>
+
+        <!-- CALL TO ACTION -->
+        <div class="cta-container">
+            <p style="margin-bottom: 20px; color: var(--text-secondary);">
+                ¿Listo para liderar el mercado Web3?
+            </p>
+            <!-- REEMPLAZA CON TU EMAIL -->
+            <a href="mailto:tuemail@gmail.com" class="btn-primary">AGENDAR ENTREVISTA</a>
+        </div>
+        
+        <div style="margin-top: 30px; text-align: center; font-size: 0.7rem; color: var(--text-secondary);">
+            Código desarrollado en móvil por Fernando Gutiérrez
+        </div>
+    </div>
+
+    <script>
+        function verifyCert() {
+            const btn = document.querySelector('button');
+            const result = document.getElementById('result');
+            
+            btn.innerHTML = "🔄 CONSULTANDO NODO...";
+            btn.style.opacity = "0.8";
+            
+            setTimeout(() => {
+                btn.innerHTML = "VERIFICADO CORRECTAMENTE";
+                btn.style.backgroundColor = "#10b981"; /* Verde éxito */
+                btn.style.color = "#fff";
+                result.style.display = "block";
+            }, 1500);
+        }
+    </script>
+</body>
+</html>

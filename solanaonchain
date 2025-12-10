@@ -1,0 +1,14 @@
+solana-onchain-analytics/
+  ├── data_pipeline/
+  │     ├── extract.py
+  │     ├── transform.py
+  │     ├── load.py
+  ├── analytics/
+  │     ├── pnl_calculator.py
+  │     ├── staking_roi.py
+  │     ├── exposure_analysis.py
+  ├── dashboard/
+  │     ├── app.py
+  ├── examples/
+  │     ├── wallet_report.pdf
+  │     ├── staking_performance.csv

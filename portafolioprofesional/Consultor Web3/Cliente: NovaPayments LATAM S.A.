@@ -1,0 +1,26 @@
+Cliente: NovaPayments LATAM S.A.
+
+Industria: Pagos digitales y soluciones fintech
+País: México
+
+Problema del cliente
+
+NovaPayments buscaba integrar pagos en USDC en sus aplicaciones móviles y evaluar si una parte de su tesorería podía migrarse a staking líquido en Solana, manteniendo liquidez y seguridad.
+
+Servicios entregados
+
+Diseño de arquitectura para integración de Solana Pay.
+
+Selección e implementación de wallets corporativas (Phantom Enterprise + Ledger).
+
+Construcción de un pipeline on-chain para monitoreo de transacciones y liquidaciones.
+
+Reporte estratégico sobre rendimiento potencial usando Jito y Marinade.
+
+Resultados
+
+Reducción del 92% en costos operativos respecto a procesadores tradicionales.
+
+Pipeline automatizado con reportes diarios.
+
+Rendimiento anual proyectado: 7.5% – 8.2% APR.

@@ -1,0 +1,39 @@
+Proyecto Técnico – On‑Chain Intelligence Pipeline
+Cliente: Atlas Crypto Research Group
+
+Industria: Análisis institucional de activos digitales
+
+Objetivo
+
+Crear un pipeline completo para análisis on-chain de wallets de alto valor y tokens emergentes.
+
+Entregables
+
+Sistema ETL usando Python (Helius API + solana-py).
+
+Base de datos SQLite para indexar movimientos.
+
+Dashboard Streamlit con visualización en tiempo real.
+
+Algoritmo básico de clasificación de transacciones y detección de patrones.
+
+Arquitectura del Proyecto
+/atlas-onchain-intelligence/
+   ├── etl/
+   │     ├── extract_wallets.py
+   │     ├── transform_classify.py
+   │     ├── load_database.py
+   ├── analytics/
+   │     ├── whale_behavior.py
+   │     ├── pnl_engine.py
+   ├── dashboard/
+   │     ├── app.py
+   ├── reports/
+   │     ├── monthly_insights.pdf
+Métricas destacadas
+
+Procesamiento de hasta 120,000 transacciones por hora.
+
+Identificación de wallets relacionadas con equipos desarrolladores.
+
+Implementación de alertas via Telegram.
